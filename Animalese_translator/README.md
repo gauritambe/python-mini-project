@@ -34,6 +34,21 @@ and how to install them.
 ## 🌟 How to run
 <!--Remove the below lines and add yours -->
 Steps on how to run the script along with suitable examples.
+1. Build docker image
+```bash
+docker build -t animalese_translator .
+```
+
+2. Run the container
+```bash
+docker run -v $(pwd)/output:/app/output animalese_translator
+```
+
+3. Check output on your localhost the output folder will get created
+```bash
+aplay output/Hello_World.wav
+```
+Run this cmd.
 
 ## 📺 Demo
 Add a Screenshot/GIF showing the sample use of the script (jpeg/png/gif).
