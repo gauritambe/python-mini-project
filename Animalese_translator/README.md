@@ -51,7 +51,6 @@ aplay output/Hello_World.wav
 Run this cmd.
 
 ## 📺 Demo
-Add a Screenshot/GIF showing the sample use of the script (jpeg/png/gif).
 <img width="1379" height="124" alt="image" src="https://github.com/user-attachments/assets/fa3d34ac-43de-45ca-9daf-3aaa9c206c47" />
 
 
