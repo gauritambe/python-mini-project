@@ -22,8 +22,8 @@ Running the script is really simple! Just open a terminal in the folder where yo
 ```sh
 python Caterpillar.py
 ```
-## How to run as a docker file 
-# Steps:
+## How to run as a docker file. For Ubuntu machine.
+### Steps:
 1. Connect to the server with X11 forwarding:
 ```bash
 ssh -X <username>@<hostname>
@@ -43,8 +43,8 @@ docker build -t caterpillar-game .
 ```bash
 docker run --network host \
   -e DISPLAY=localhost:10.0 \
-  -e XAUTHORITY=/home/devops/.Xauthority \
-  -v /home/devops/.Xauthority:/home/devops/.Xauthority \
+  -e XAUTHORITY=<your_home_dir>.Xauthority \
+  -v <your_home_dir>.Xauthority:<your_home_dir>.Xauthority \
   caterpillar-game
 ```
 
