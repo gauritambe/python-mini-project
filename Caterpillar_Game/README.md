@@ -43,8 +43,8 @@ docker build -t caterpillar-game .
 ```bash
 docker run --network host \
   -e DISPLAY=localhost:10.0 \
-  -e XAUTHORITY=<your_home_dir>.Xauthority \
-  -v <your_home_dir>.Xauthority:<your_home_dir>.Xauthority \
+  -e XAUTHORITY=/home/$USER/.Xauthority \
+  -v /home/$USER/.Xauthority:/home/$USER/.Xauthority \
   caterpillar-game
 ```
 
